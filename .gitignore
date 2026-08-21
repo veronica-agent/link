@@ -1,0 +1,7 @@
+.ufbt/
+dist/
+.vscode/
+*.fap
+.sconsign.dblite
+*.o
+.DS_Store

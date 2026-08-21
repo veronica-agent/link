@@ -1,0 +1,14 @@
+App(
+    appid="link",
+    name="Link",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="link_app",
+    requires=["gui"],
+    stack_size=4 * 1024,
+    fap_category="GPIO",
+    fap_icon="link_10px.png",
+    fap_author="Veronica",
+    fap_weburl="https://github.com/veronica-agent/link",
+    fap_description="USB MIDI clock for Little Sound DJ. Game Boy link on GPIO.",
+    fap_version="0.1",
+)
