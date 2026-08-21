@@ -1,4 +1,4 @@
-# link — Flipper FAP, USB MIDI clock for a Game Boy
+# link — Flipper FAP, USB MIDI clock gadget
 
 set dotenv-load := false
 

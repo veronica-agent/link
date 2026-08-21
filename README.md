@@ -4,9 +4,9 @@
   <img src="docs/flipper.png" width="520" alt="Flipper Zero" />
 </p>
 
-<p align="center"><b>MIDI clock for a Game Boy. In your pocket.</b></p>
+<p align="center"><b>USB MIDI clock. On a Flipper.</b></p>
 
-<p align="center">USB MIDI in. GPIO out. The tracker follows.</p>
+<p align="center">Plug it in. Your Mac sees <b>Link</b>. Start, clock, stop.</p>
 
 <p align="center">
   <img src="docs/screen.gif" width="640" alt="Link on Flipper: WAIT, RUN, TAP" />
@@ -34,23 +34,11 @@ Or drop `dist/link.fap` on the SD card at `apps/GPIO/`.
 
 | Mode | What it does |
 |------|----------------|
-| SLAVE | DAW clock in, eight CLK edges per tick |
-| MASTER | Game Boy clock in, MIDI clock out |
+| SLAVE | MIDI clock in. GPIO CLK out. |
+| MASTER | GPIO CLK in. MIDI clock out. |
 | TAP | Internal clock. Unplug USB. |
 
-Start the tracker so it waits for clock, then hit play on the DAW.
-
-## Kit
-
-- Flipper Zero
-- [KBEmbedded GB Link](https://www.tindie.com/products/kbembedded/game-link-gpio-module-for-flipper-zero-game-boy/) (or a cable you continuity-checked)
-- Game Boy Color, GBA SP, or Analogue Pocket
-
-<p align="center">
-  <img src="docs/pinout.png" width="640" alt="Original pinout" />
-</p>
-
-Hold **Back** for MLVK25. Original DMG is 5 V. Untested.
+Plug USB, pick SLAVE, hit play in the DAW. The gadget is named **Link** (Obedience Corp).
 
 ## Buttons
 
@@ -64,11 +52,19 @@ Hold **Back** for MLVK25. Original DMG is 5 V. Untested.
 
 MIDI channel 16: 48 start, 49 stop, 50–53 divide.
 
+## GPIO
+
+CLK / SI / SO on the 13-pin GPIO. Default Original (PB2 / PC3 / PB3). Hold **Back** for MLVK25 (PB3 / PA6 / PA7).
+
+<p align="center">
+  <img src="docs/pinout.png" width="640" alt="Original pinout" />
+</p>
+
 ## License
 
 Apache 2.0.
 
-Clock follows [ArduinoBoy](https://github.com/trash80/Arduinoboy) modes 1 and 2 (GPL-2.0) as a spec. This tree is a new implementation. Pinout follows KBEmbedded.
+Clock grammar follows [ArduinoBoy](https://github.com/trash80/Arduinoboy) modes 1 and 2 (GPL-2.0) as a spec. This tree is a new implementation.
 
 Flipper Zero photo: [Flipper Devices](https://flipper.net/products/flipper-zero).
 

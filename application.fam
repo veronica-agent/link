@@ -9,6 +9,6 @@ App(
     fap_icon="link_10px.png",
     fap_author="Veronica",
     fap_weburl="https://github.com/veronica-agent/link",
-    fap_description="USB MIDI clock for Little Sound DJ. Game Boy link on GPIO.",
+    fap_description="USB MIDI clock gadget. GPIO CLK in or out.",
     fap_version="0.1",
 )
